@@ -1,0 +1,81 @@
+ Citer les variables d'instance de la classe "Square"
+	Size, Position et Couleur
+
+
+Créer une méthode "DoubleSize()" dans la classe "Square" qui permette de doubler les dimensions du carré
+
+ 	public void DoubleSize()
+ 	   {
+ 	       erase();
+ 	       size = size*size;
+ 	       draw(); 
+ 	   }
+
+Créer une classe MyRectangle avec
+	- un constructeur par défaut qui créera un rectangle de 30x60
+	- un constructeur capable d'accepter en paramètre une largeur et une hauteur de votre choix
+
+
+	public class MyRectangle
+	{
+	    private int xsize;
+	    private int ysize;
+	    private int xPosition;
+	    private int yPosition;
+	    private String color;
+	    private boolean isVisible;
+	    
+	    	public MyRectangle()
+	   	 {
+	       		 xsize = 30;
+	       		 ysize = 60;
+	        	xPosition = 60;
+	        	yPosition = 50;
+	        	color = "red";
+	        	isVisible = true;
+	    	 }
+	
+    
+   	        public MyRectangle(int xSize, int ySize)
+   	 	{
+   	   	  xsize = xSize;
+   	   	  ysize = ySize;
+   	   	  xPosition = 60;
+   	   	  yPosition = 50;
+   	   	  color = "red";
+   	   	  isVisible = true;
+   	 	}
+	}
+
+
+Créer une classe "House" composée
+	- d'un corps (carré)
+	- d'un toit (triangle),
+	- d'une porte (rectangle)
+	- d'une fenêtre circulaire (cercle)
+	- une propriété statique "Nombre" permettant de savoir combien de maisons sont crées (cette propriété devra être mise à jour à chaque ajout/suppression de maison)
+
+
+
+
+
+Créer un constructeur qui initialisera la maison avec une taille et des couleurs de votre choix
+
+
+
+
+Créer un constructeur qui acceptera 3 paramètres :
+	- la taille de la maison
+	- une couleur de base (pour le corps et le toit)
+	- une couleur secondaire (pour la porte et la fenêtre)
+
+
+
+
+Créer une méthode permettant de déplacer horizontalement la maison
+
+
+
+
+
+Créer une méthode setCustomSize(int pixels) capable de modifier la taille de la maison

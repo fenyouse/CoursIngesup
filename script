@@ -1,0 +1,39 @@
+
+
+valeur=$RANDOM
+stop=0
+ 
+if [ $# -gt 0 ]
+then
+ if [ $1 -eq "-h" ]; then
+    cat<<EOF
+
+EOF
+ else
+   echo usage : $0 [-h for help];
+   exit 0;
+ fi
+else
+ 
+while test $stop -eq 0
+ 
+do
+echo Veuillez entrer un nombre : 
+read read
+ COUNT=$((COUNT+1))
+      case $read in
+        $valeur)
+            stop=1 ;;
+ 
+          *)
+            if [ $read -gt $valeur ]; then
+                echo Votre valeur est plus grande que celle recherché.
+             else echo Votre valeur est plus petite que celle recherché.
+            fi
+            ;;
+      esac
+done;
+ 
+echo Félicitation !;
+echo $COUNT
+fi

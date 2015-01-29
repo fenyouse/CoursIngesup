@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7 nov. 2014, 01:26:14
+    Author     : mmaldo
+*/
+
+body {
+    background-color: #C0C0C0;
+    font:  15px arial, sans-serif; 
+}
+
+h1 {
+    color: orange;
+    text-align: center;
+}
+
+#album {
+    width: 800px;
+}
+#album ul li{
+    list-style-type: none;
+}
+
+.titreAlbum {
+    font-weight: bold;
+    font-size:24pt;
+    color: darkred;
+}
+.dureeAlbum {    
+    font-style: italic;
+    font-size:14pt;
+    display: inline-block;
+    float: right;
+}
+.jacquetteAlbum{
+    float: right;
+    width: 180;
+    height: 180px;
+}
+.titrePiste {
+    font-weight: bold;   
+}
